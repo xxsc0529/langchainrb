@@ -10,6 +10,7 @@ module Langchain::Vectorsearch
   # - {Langchain::Vectorsearch::Elasticsearch}
   # - {Langchain::Vectorsearch::Hnswlib}
   # - {Langchain::Vectorsearch::Milvus}
+  # - {Langchain::Vectorsearch::Oceanbase}
   # - {Langchain::Vectorsearch::Pgvector}
   # - {Langchain::Vectorsearch::Pinecone}
   # - {Langchain::Vectorsearch::Qdrant}
@@ -29,11 +30,12 @@ module Langchain::Vectorsearch
   #     )
   #
   #     # You can instantiate other supported vector databases the same way:
-  #     milvus   = Langchain::Vectorsearch::Milvus.new(...)
-  #     qdrant   = Langchain::Vectorsearch::Qdrant.new(...)
-  #     pinecone = Langchain::Vectorsearch::Pinecone.new(...)
-  #     chroma   = Langchain::Vectorsearch::Chroma.new(...)
-  #     pgvector = Langchain::Vectorsearch::Pgvector.new(...)
+  #     milvus     = Langchain::Vectorsearch::Milvus.new(...)
+  #     oceanbase  = Langchain::Vectorsearch::Oceanbase.new(...)
+  #     qdrant     = Langchain::Vectorsearch::Qdrant.new(...)
+  #     pinecone   = Langchain::Vectorsearch::Pinecone.new(...)
+  #     chroma     = Langchain::Vectorsearch::Chroma.new(...)
+  #     pgvector   = Langchain::Vectorsearch::Pgvector.new(...)
   #
   # == Schema Creation
   #
